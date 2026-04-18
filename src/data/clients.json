@@ -1,0 +1,490 @@
+[
+  {
+    "id": 1,
+    "name": "Sharma Bricks Industries",
+    "slug": "sharma-bricks",
+    "category": "bricks",
+    "isPremium": true,
+    "logo": "SB",
+    "logoColor": "#E17055",
+    "tagline": "Building Tomorrow, Brick by Brick",
+    "description": "Established in 1998, Sharma Bricks Industries is one of the leading brick manufacturers in the region. We specialize in high-quality red bricks, fly ash bricks, and hollow blocks suitable for all types of construction projects.",
+    "address": "Industrial Area, Sector 5, Rajasthan",
+    "phone": "+91 98765 43210",
+    "email": "info@sharmabricks.com",
+    "experience": "25+ Years",
+    "rating": 4.8,
+    "reviews": 320,
+    "products": [
+      {
+        "id": 101,
+        "name": "Red Clay Bricks",
+        "description": "Traditional red clay bricks, kiln fired, excellent strength and durability for load bearing walls.",
+        "price": 8500,
+        "unit": "per 1000 bricks",
+        "minOrder": "5000 bricks",
+        "image": "🧱",
+        "specs": ["Size: 9x4.5x3 inches", "Compressive Strength: 75 kg/cm²", "Water Absorption: < 15%"]
+      },
+      {
+        "id": 102,
+        "name": "Fly Ash Bricks",
+        "description": "Eco-friendly fly ash bricks with superior strength and thermal insulation properties.",
+        "price": 7200,
+        "unit": "per 1000 bricks",
+        "minOrder": "5000 bricks",
+        "image": "🧱",
+        "specs": ["Size: 9x4.5x3 inches", "Compressive Strength: 100 kg/cm²", "Eco-friendly material"]
+      },
+      {
+        "id": 103,
+        "name": "Hollow Concrete Blocks",
+        "description": "Lightweight hollow blocks for partition walls and non-load bearing applications.",
+        "price": 45,
+        "unit": "per piece",
+        "minOrder": "500 pieces",
+        "image": "🏗️",
+        "specs": ["Size: 16x8x8 inches", "Weight: 17 kg", "Hollow core for insulation"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Patel Brick Works",
+    "slug": "patel-bricks",
+    "category": "bricks",
+    "isPremium": false,
+    "logo": "PB",
+    "logoColor": "#D35400",
+    "tagline": "Strength in Every Brick",
+    "description": "Patel Brick Works has been supplying quality bricks since 1985. Our automated manufacturing process ensures consistent quality and timely delivery for all construction requirements.",
+    "address": "GIDC, Anand, Gujarat",
+    "phone": "+91 97654 32109",
+    "email": "sales@patelbricks.com",
+    "experience": "38+ Years",
+    "rating": 4.5,
+    "reviews": 210,
+    "products": [
+      {
+        "id": 104,
+        "name": "Wire Cut Bricks",
+        "description": "Machine made wire cut bricks with uniform size and high compressive strength.",
+        "price": 9000,
+        "unit": "per 1000 bricks",
+        "minOrder": "10000 bricks",
+        "image": "🧱",
+        "specs": ["Size: 9x4.5x3 inches", "Compressive Strength: 85 kg/cm²", "Smooth surface finish"]
+      },
+      {
+        "id": 105,
+        "name": "AAC Blocks",
+        "description": "Autoclaved Aerated Concrete blocks for modern construction with excellent insulation.",
+        "price": 3800,
+        "unit": "per cubic meter",
+        "minOrder": "10 cubic meters",
+        "image": "🏗️",
+        "specs": ["Size: 600x200x150 mm", "Density: 550-650 kg/m³", "Thermal conductivity: 0.16 W/mK"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Modi Construction Bricks",
+    "slug": "modi-bricks",
+    "category": "bricks",
+    "isPremium": false,
+    "logo": "MC",
+    "logoColor": "#C0392B",
+    "tagline": "Quality You Can Build On",
+    "description": "Modi Construction Bricks offers a range of traditional and modern brick solutions for residential, commercial and industrial construction projects across India.",
+    "address": "Brick Kiln Road, Agra, UP",
+    "phone": "+91 96543 21098",
+    "email": "contact@modibricks.com",
+    "experience": "20+ Years",
+    "rating": 4.3,
+    "reviews": 145,
+    "products": [
+      {
+        "id": 106,
+        "name": "First Class Bricks",
+        "description": "Premium first class bricks with smooth finish, ideal for exposed brickwork and architectural features.",
+        "price": 10500,
+        "unit": "per 1000 bricks",
+        "minOrder": "2000 bricks",
+        "image": "🧱",
+        "specs": ["Size: 9x4.5x3 inches", "Compressive Strength: 105 kg/cm²", "Low water absorption"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "ClearView Glass Solutions",
+    "slug": "clearview-glass",
+    "category": "glass",
+    "isPremium": true,
+    "logo": "CV",
+    "logoColor": "#0984E3",
+    "tagline": "Clarity in Every Pane",
+    "description": "ClearView Glass Solutions is a premium supplier of architectural glass for residential and commercial projects. We offer custom cutting, tempering, laminating and installation services.",
+    "address": "Glass Tech Park, Vadodara, Gujarat",
+    "phone": "+91 95432 10987",
+    "email": "info@clearviewglass.com",
+    "experience": "15+ Years",
+    "rating": 4.9,
+    "reviews": 280,
+    "products": [
+      {
+        "id": 201,
+        "name": "Tempered Safety Glass",
+        "description": "Heat-treated tempered glass with 4-5x strength of normal glass. Perfect for shower enclosures, doors and facades.",
+        "price": 180,
+        "unit": "per sq ft",
+        "minOrder": "50 sq ft",
+        "image": "🪟",
+        "specs": ["Thickness: 8mm, 10mm, 12mm", "Heat strengthened", "Safety certified"]
+      },
+      {
+        "id": 202,
+        "name": "Double Glazed Insulated Glass",
+        "description": "Double pane glass units with argon gas fill for superior thermal and acoustic insulation.",
+        "price": 320,
+        "unit": "per sq ft",
+        "minOrder": "30 sq ft",
+        "image": "🏠",
+        "specs": ["Total thickness: 24mm", "U-value: 1.2 W/m²K", "Sound reduction: 35 dB"]
+      },
+      {
+        "id": 203,
+        "name": "Mirror Glass",
+        "description": "High quality silver mirrors with waterproof backing for bathrooms and decorative applications.",
+        "price": 95,
+        "unit": "per sq ft",
+        "minOrder": "20 sq ft",
+        "image": "🪟",
+        "specs": ["Thickness: 4mm, 5mm", "Waterproof coating", "Custom shapes available"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Singh Glass & Aluminium",
+    "slug": "singh-glass",
+    "category": "glass",
+    "isPremium": false,
+    "logo": "SG",
+    "logoColor": "#2980B9",
+    "tagline": "Modern Glass for Modern Buildings",
+    "description": "Singh Glass & Aluminium provides complete glazing solutions including glass supply, aluminium frames, sliding windows, and partition systems for all building types.",
+    "address": "Industrial Estate, Ludhiana, Punjab",
+    "phone": "+91 94321 09876",
+    "email": "sales@singhglass.com",
+    "experience": "12+ Years",
+    "rating": 4.4,
+    "reviews": 189,
+    "products": [
+      {
+        "id": 204,
+        "name": "Float Glass",
+        "description": "Standard float glass for windows, mirrors and general glazing applications.",
+        "price": 55,
+        "unit": "per sq ft",
+        "minOrder": "100 sq ft",
+        "image": "🪟",
+        "specs": ["Thickness: 3mm to 12mm", "Clear transparency", "Easy to cut and process"]
+      },
+      {
+        "id": 205,
+        "name": "Tinted Glass",
+        "description": "Bronze, grey and blue tinted glass for solar control and aesthetic appeal.",
+        "price": 85,
+        "unit": "per sq ft",
+        "minOrder": "50 sq ft",
+        "image": "🪟",
+        "specs": ["Available tints: Bronze, Grey, Blue", "Solar heat reduction: 30-40%", "UV protection: 85%"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "UltraTech Cement Dealer",
+    "slug": "ultratech-dealer",
+    "category": "cement",
+    "isPremium": true,
+    "logo": "UT",
+    "logoColor": "#7F8C8D",
+    "tagline": "The Engineer's Choice",
+    "description": "Authorized dealer for UltraTech and ACC cement brands. We supply PPC, OPC and specialty cements for all construction needs with same-day delivery in the city.",
+    "address": "Material Market, Mumbai, Maharashtra",
+    "phone": "+91 93210 98765",
+    "email": "orders@ultratechdealer.com",
+    "experience": "18+ Years",
+    "rating": 4.7,
+    "reviews": 412,
+    "products": [
+      {
+        "id": 301,
+        "name": "PPC Cement 50kg",
+        "description": "Portland Pozzolana Cement for general construction, slabs and masonry work.",
+        "price": 380,
+        "unit": "per bag (50kg)",
+        "minOrder": "50 bags",
+        "image": "🏗️",
+        "specs": ["Grade: 43/53", "Setting time: 30 min initial", "28-day strength: 43 MPa"]
+      },
+      {
+        "id": 302,
+        "name": "OPC 53 Grade Cement",
+        "description": "Ordinary Portland Cement 53 grade for RCC, pre-stressed concrete and high strength applications.",
+        "price": 410,
+        "unit": "per bag (50kg)",
+        "minOrder": "50 bags",
+        "image": "🏗️",
+        "specs": ["Grade: 53", "Early high strength", "Ideal for RCC structures"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Tata Steel Distributor",
+    "slug": "tata-steel",
+    "category": "steel",
+    "isPremium": true,
+    "logo": "TS",
+    "logoColor": "#2C3E50",
+    "tagline": "Steel That Builds Nations",
+    "description": "Authorized distributor of Tata Steel TMT bars and structural steel. We supply Fe-500D TMT bars, angles, channels and MS plates for construction and fabrication.",
+    "address": "Steel Market, Raipur, Chhattisgarh",
+    "phone": "+91 92109 87654",
+    "email": "info@tatasteeldist.com",
+    "experience": "22+ Years",
+    "rating": 4.8,
+    "reviews": 356,
+    "products": [
+      {
+        "id": 401,
+        "name": "TMT Bars Fe-500D",
+        "description": "High strength earthquake resistant TMT bars for RCC construction.",
+        "price": 62000,
+        "unit": "per metric ton",
+        "minOrder": "1 metric ton",
+        "image": "⚙️",
+        "specs": ["Grade: Fe-500D", "Sizes: 8mm to 32mm", "Corrosion resistant coating"]
+      },
+      {
+        "id": 402,
+        "name": "MS Angles & Channels",
+        "description": "Mild steel angles and channels for structural fabrication and support structures.",
+        "price": 58000,
+        "unit": "per metric ton",
+        "minOrder": "500 kg",
+        "image": "⚙️",
+        "specs": ["Various sizes available", "IS 2062 Grade", "Cut to length service available"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Johnson Tiles Showroom",
+    "slug": "johnson-tiles",
+    "category": "tiles",
+    "isPremium": true,
+    "logo": "JT",
+    "logoColor": "#E67E22",
+    "tagline": "Transform Every Space",
+    "description": "Exclusive Johnson Tiles showroom with 500+ designs in floor tiles, wall tiles, vitrified and digital tiles. Custom tile solutions for premium residential and commercial projects.",
+    "address": "Tiles Bazaar, Morbi, Gujarat",
+    "phone": "+91 91098 76543",
+    "email": "design@johnsontiles.com",
+    "experience": "10+ Years",
+    "rating": 4.9,
+    "reviews": 520,
+    "products": [
+      {
+        "id": 501,
+        "name": "Vitrified Floor Tiles 60x60",
+        "description": "Double charged vitrified tiles with high gloss finish, scratch resistant and easy to maintain.",
+        "price": 55,
+        "unit": "per sq ft",
+        "minOrder": "100 sq ft",
+        "image": "🏠",
+        "specs": ["Size: 600x600mm", "Thickness: 10mm", "Water absorption: < 0.5%"]
+      },
+      {
+        "id": 502,
+        "name": "Digital Wall Tiles",
+        "description": "High definition digital printed wall tiles with realistic stone and marble patterns.",
+        "price": 48,
+        "unit": "per sq ft",
+        "minOrder": "50 sq ft",
+        "image": "🏠",
+        "specs": ["Size: 300x450mm", "Matte/Glossy finish", "200+ designs available"]
+      },
+      {
+        "id": 503,
+        "name": "Outdoor Anti-Skid Tiles",
+        "description": "Heavy duty anti-skid tiles for outdoor areas, parking lots and wet zones.",
+        "price": 38,
+        "unit": "per sq ft",
+        "minOrder": "200 sq ft",
+        "image": "🏠",
+        "specs": ["Size: 300x300mm", "R11 anti-skid rating", "Frost resistant"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Asian Paints Pro",
+    "slug": "asian-paints-pro",
+    "category": "paints",
+    "isPremium": true,
+    "logo": "AP",
+    "logoColor": "#8E44AD",
+    "tagline": "Har Ghar Kuch Kehta Hai",
+    "description": "Premium Asian Paints dealer offering complete painting solutions. We provide full range from primers to topcoats, texture finishes, waterproofing solutions and professional application services.",
+    "address": "Paint Market, Bangalore, Karnataka",
+    "phone": "+91 90987 65432",
+    "email": "pro@asianpaintspro.com",
+    "experience": "14+ Years",
+    "rating": 4.7,
+    "reviews": 634,
+    "products": [
+      {
+        "id": 601,
+        "name": "Apex Exterior Emulsion",
+        "description": "Premium exterior wall paint with weather shield technology for long lasting protection.",
+        "price": 280,
+        "unit": "per litre",
+        "minOrder": "10 litres",
+        "image": "🎨",
+        "specs": ["Coverage: 75-80 sq ft/litre", "Weather resistance: 10 years", "1000+ color options"]
+      },
+      {
+        "id": 602,
+        "name": "Royale Interior Emulsion",
+        "description": "Luxury interior paint with smooth, silk finish and washable surface.",
+        "price": 320,
+        "unit": "per litre",
+        "minOrder": "10 litres",
+        "image": "🎨",
+        "specs": ["Coverage: 80-90 sq ft/litre", "Washable surface", "Low VOC formula"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Supreme Pipes & Fittings",
+    "slug": "supreme-pipes",
+    "category": "plumbing",
+    "isPremium": false,
+    "logo": "SP",
+    "logoColor": "#27AE60",
+    "tagline": "Flow Without Worry",
+    "description": "Complete plumbing solutions including CPVC, UPVC and HDPE pipes, fittings, valves and sanitary ware. We supply to plumbers, contractors and direct customers.",
+    "address": "Hardware Market, Hyderabad, Telangana",
+    "phone": "+91 89876 54321",
+    "email": "orders@supremepipes.com",
+    "experience": "16+ Years",
+    "rating": 4.5,
+    "reviews": 298,
+    "products": [
+      {
+        "id": 701,
+        "name": "CPVC Hot & Cold Water Pipes",
+        "description": "Chlorinated PVC pipes for hot and cold water plumbing with superior pressure rating.",
+        "price": 125,
+        "unit": "per metre (1 inch)",
+        "minOrder": "100 metres",
+        "image": "🔧",
+        "specs": ["Pressure rating: 10 kg/cm²", "Temperature range: -15°C to 93°C", "Lead-free material"]
+      },
+      {
+        "id": 702,
+        "name": "UPVC Drainage Pipes",
+        "description": "UV resistant UPVC pipes for drainage, sewage and underground applications.",
+        "price": 85,
+        "unit": "per metre (4 inch)",
+        "minOrder": "50 metres",
+        "image": "🔧",
+        "specs": ["4 inch diameter", "SN4/SN8 stiffness class", "Corrosion resistant"]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Havells Electricals Hub",
+    "slug": "havells-hub",
+    "category": "electricals",
+    "isPremium": true,
+    "logo": "HE",
+    "logoColor": "#F39C12",
+    "tagline": "Wires That Never Fail",
+    "description": "Authorized Havells distributor for wires, cables, switches, MCBs and distribution boards. We serve builders, electrical contractors and individuals for all project types.",
+    "address": "Electric Market, Delhi",
+    "phone": "+91 88765 43210",
+    "email": "sales@havellshub.com",
+    "experience": "20+ Years",
+    "rating": 4.8,
+    "reviews": 478,
+    "products": [
+      {
+        "id": 801,
+        "name": "Havells FR Cables 2.5 sq mm",
+        "description": "Flame retardant PVC insulated multi-strand copper conductor cables for house wiring.",
+        "price": 3200,
+        "unit": "per 90 metre coil",
+        "minOrder": "5 coils",
+        "image": "⚡",
+        "specs": ["Conductor: 2.5 sq mm copper", "FR-PVC insulation", "IS 694 certified"]
+      },
+      {
+        "id": 802,
+        "name": "Havells Modular Switches",
+        "description": "Premium modular switches with smooth operation and elegant design for modern homes.",
+        "price": 280,
+        "unit": "per piece",
+        "minOrder": "20 pieces",
+        "image": "⚡",
+        "specs": ["16A rating", "Multiple colors available", "5 year warranty"]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Balaji Timber Mart",
+    "slug": "balaji-timber",
+    "category": "wood",
+    "isPremium": false,
+    "logo": "BT",
+    "logoColor": "#795548",
+    "tagline": "Natural Wood, Lasting Quality",
+    "description": "Premium timber and wood supplier for furniture, flooring, and construction. We stock teak, sagwan, pine, and engineered wood products from sustainable sources.",
+    "address": "Timber Market, Nagpur, Maharashtra",
+    "phone": "+91 87654 32109",
+    "email": "info@balajitimber.com",
+    "experience": "30+ Years",
+    "rating": 4.6,
+    "reviews": 234,
+    "products": [
+      {
+        "id": 901,
+        "name": "Teak Wood (Sagwan) Planks",
+        "description": "Seasoned teak wood planks for furniture, doors and window frames. Superior durability.",
+        "price": 2200,
+        "unit": "per cubic feet",
+        "minOrder": "10 cubic feet",
+        "image": "🪵",
+        "specs": ["Species: Tectona grandis", "Moisture content: < 12%", "Termite resistant"]
+      },
+      {
+        "id": 902,
+        "name": "Marine Plywood 18mm",
+        "description": "Boiling water proof marine plywood for kitchen cabinets, bathrooms and high moisture areas.",
+        "price": 4800,
+        "unit": "per sheet (8x4 ft)",
+        "minOrder": "10 sheets",
+        "image": "🪵",
+        "specs": ["Size: 2440x1220mm", "Thickness: 18mm", "BWP grade, IS 710 certified"]
+      }
+    ]
+  }
+]

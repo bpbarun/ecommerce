@@ -1,0 +1,128 @@
+.search-page {
+  min-height: 80vh;
+  background: #f8f9fa;
+}
+
+.search-header {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  padding: 40px 20px;
+}
+
+.search-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.search-header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.search-header p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+}
+
+.search-body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.search-section {
+  margin-bottom: 36px;
+}
+
+.search-section h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 16px;
+}
+
+.search-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.search-cat-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 2px solid #e9ecef;
+  border-radius: 25px;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.search-cat-chip:hover {
+  border-color: #0984e3;
+  color: #0984e3;
+  transform: translateY(-2px);
+}
+
+.search-cat-chip span:first-child {
+  font-size: 20px;
+}
+
+.search-clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-results span {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.no-results h3 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+}
+
+.no-results p {
+  font-size: 15px;
+  color: #636e72;
+  margin: 0 0 24px;
+}
+
+.browse-all-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .search-clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .search-clients-grid {
+    grid-template-columns: 1fr;
+  }
+}

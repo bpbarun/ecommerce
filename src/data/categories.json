@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Bricks",
+    "slug": "bricks",
+    "icon": "🧱",
+    "description": "High quality bricks for construction",
+    "color": "#E8A87C"
+  },
+  {
+    "id": 2,
+    "name": "Glass",
+    "slug": "glass",
+    "icon": "🪟",
+    "description": "Premium glass solutions for modern architecture",
+    "color": "#74B9FF"
+  },
+  {
+    "id": 3,
+    "name": "Cement",
+    "slug": "cement",
+    "icon": "🏗️",
+    "description": "Top grade cement for all types of construction",
+    "color": "#B2BEC3"
+  },
+  {
+    "id": 4,
+    "name": "Steel",
+    "slug": "steel",
+    "icon": "⚙️",
+    "description": "Structural and reinforcement steel products",
+    "color": "#636E72"
+  },
+  {
+    "id": 5,
+    "name": "Tiles",
+    "slug": "tiles",
+    "icon": "🏠",
+    "description": "Floor and wall tiles for every space",
+    "color": "#FDCB6E"
+  },
+  {
+    "id": 6,
+    "name": "Paints",
+    "slug": "paints",
+    "icon": "🎨",
+    "description": "Interior and exterior paints for beautiful finishes",
+    "color": "#A29BFE"
+  },
+  {
+    "id": 7,
+    "name": "Plumbing",
+    "slug": "plumbing",
+    "icon": "🔧",
+    "description": "Complete plumbing solutions and accessories",
+    "color": "#55EFC4"
+  },
+  {
+    "id": 8,
+    "name": "Electricals",
+    "slug": "electricals",
+    "icon": "⚡",
+    "description": "Wires, switches and electrical components",
+    "color": "#FFEAA7"
+  },
+  {
+    "id": 9,
+    "name": "Wood & Timber",
+    "slug": "wood",
+    "icon": "🪵",
+    "description": "Quality wood and timber for furniture & construction",
+    "color": "#D4A373"
+  },
+  {
+    "id": 10,
+    "name": "Roofing",
+    "slug": "roofing",
+    "icon": "🏘️",
+    "description": "Roofing sheets, tiles and waterproofing solutions",
+    "color": "#FF7675"
+  }
+]

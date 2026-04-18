@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "clientId": 1,
+    "clientName": "Sharma Bricks Industries",
+    "category": "bricks",
+    "headline": "Premium Bricks at Factory Prices!",
+    "subtext": "25+ years of trust • Free delivery on 10,000+ bricks • ISI certified",
+    "cta": "Get Quote Now",
+    "badge": "Premium Partner",
+    "bgColor": "#FFF3E0",
+    "accentColor": "#E17055",
+    "emoji": "🧱"
+  },
+  {
+    "id": 2,
+    "clientId": 4,
+    "clientName": "ClearView Glass Solutions",
+    "category": "glass",
+    "headline": "Crystal Clear Glass for Modern Spaces",
+    "subtext": "Tempered • Laminated • IGU • Custom Cutting • Installation",
+    "cta": "Explore Products",
+    "badge": "Top Rated",
+    "bgColor": "#E3F2FD",
+    "accentColor": "#0984E3",
+    "emoji": "🪟"
+  },
+  {
+    "id": 3,
+    "clientId": 6,
+    "clientName": "UltraTech Cement Dealer",
+    "category": "cement",
+    "headline": "Cement Delivered to Your Doorstep",
+    "subtext": "UltraTech • ACC • Ambuja • Same-day delivery available",
+    "cta": "Order Now",
+    "badge": "Fast Delivery",
+    "bgColor": "#F5F5F5",
+    "accentColor": "#7F8C8D",
+    "emoji": "🏗️"
+  },
+  {
+    "id": 4,
+    "clientId": 8,
+    "clientName": "Johnson Tiles Showroom",
+    "category": "tiles",
+    "headline": "500+ Tile Designs Under One Roof",
+    "subtext": "Vitrified • Ceramic • Digital • Designer collections",
+    "cta": "View Collection",
+    "badge": "Best Seller",
+    "bgColor": "#FFF8E1",
+    "accentColor": "#E67E22",
+    "emoji": "🏠"
+  },
+  {
+    "id": 5,
+    "clientId": 9,
+    "clientName": "Asian Paints Pro",
+    "category": "paints",
+    "headline": "Professional Painting Solutions",
+    "subtext": "Interior • Exterior • Texture • Waterproofing",
+    "cta": "Get Color Guide",
+    "badge": "Trusted Brand",
+    "bgColor": "#F3E5F5",
+    "accentColor": "#8E44AD",
+    "emoji": "🎨"
+  },
+  {
+    "id": 6,
+    "clientId": 7,
+    "clientName": "Tata Steel Distributor",
+    "category": "steel",
+    "headline": "Tata TMT Bars – Build with Confidence",
+    "subtext": "Fe-500D Grade • Earthquake Resistant • Corrosion Protected",
+    "cta": "Request Quote",
+    "badge": "Premium Partner",
+    "bgColor": "#ECEFF1",
+    "accentColor": "#2C3E50",
+    "emoji": "⚙️"
+  }
+]
