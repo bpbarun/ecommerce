@@ -1,25 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import ClientCard from '../components/ClientCard';
-import clients from '../data/clients.json';
-import categories from '../data/categories.json';
+import { api } from '../services/api';
 import './SearchPage.css';
 
 const SearchPage = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get('q') || '';
+  const [clients, setClients] = useState([]);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    Promise.all([api.getClients(), api.getCategories()])
+      .then(([cls, cats]) => { setClients(cls); setCategories(cats); })
+      .catch(() => {});
+  }, []);
+
+  const q = query.toLowerCase();
 
   const matchedClients = clients.filter(
     (c) =>
-      c.name.toLowerCase().includes(query.toLowerCase()) ||
-      c.description.toLowerCase().includes(query.toLowerCase()) ||
-      c.products.some((p) => p.name.toLowerCase().includes(query.toLowerCase()))
+      c.name.toLowerCase().includes(q) ||
+      c.description.toLowerCase().includes(q)
   );
 
   const matchedCategories = categories.filter(
     (cat) =>
-      cat.name.toLowerCase().includes(query.toLowerCase()) ||
-      cat.description.toLowerCase().includes(query.toLowerCase())
+      cat.name.toLowerCase().includes(q) ||
+      (cat.description || '').toLowerCase().includes(q)
   );
 
   return (

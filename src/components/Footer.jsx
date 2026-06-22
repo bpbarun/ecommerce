@@ -42,14 +42,14 @@ const Footer = () => {
             <Link to="/about">About Us</Link>
           </div>
 
-          <div className="footer-links-group">
+          {/* <div className="footer-links-group">
             <h4>Contact Us</h4>
             <p>📍 BuildMart HQ, MG Road</p>
             <p>Bangalore – 560001</p>
             <p>📞 +91 80 1234 5678</p>
             <p>✉️ hello@buildmart.in</p>
             <p>🕐 Mon–Sat: 9am – 6pm</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-bottom">

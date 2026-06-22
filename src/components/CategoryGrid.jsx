@@ -1,14 +1,50 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import categories from '../data/categories.json';
-import clients from '../data/clients.json';
+import { api } from '../services/api';
 import './CategoryGrid.css';
 
 const CategoryGrid = () => {
   const navigate = useNavigate();
+  const gridRef = useRef(null);
+  const [categories, setCategories] = useState([]);
 
-  const getClientCount = (slug) =>
-    clients.filter((c) => c.category === slug).length;
+  useEffect(() => {
+    api.getCategories().then(setCategories).catch(() => {});
+  }, []);
+
+  const getClientCount = (cat) => cat.supplier_count ?? 0;
+
+  useEffect(() => {
+    const cards = gridRef.current?.querySelectorAll('.category-card');
+    if (!cards || cards.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, [categories]);
+
+  const handleClick = (e, slug) => {
+    const card = e.currentTarget;
+    const ripple = document.createElement('span');
+    const rect = card.getBoundingClientRect();
+    ripple.className = 'ripple';
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top  = `${e.clientY - rect.top}px`;
+    card.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+    setTimeout(() => navigate(`/category/${slug}`), 180);
+  };
 
   return (
     <section className="category-section">
@@ -19,14 +55,15 @@ const CategoryGrid = () => {
             Explore verified suppliers across 10+ construction material categories
           </p>
         </div>
-        <div className="category-grid">
-          {categories.map((cat) => (
+        <div className="category-grid" ref={gridRef}>
+          {categories.map((cat, idx) => (
             <div
               key={cat.id}
               className="category-card"
-              onClick={() => navigate(`/category/${cat.slug}`)}
-              style={{ '--cat-color': cat.color }}
+              style={{ '--cat-color': cat.color, '--delay': `${idx * 60}ms` }}
+              onClick={(e) => handleClick(e, cat.slug)}
             >
+              <div className="cat-glow" style={{ background: cat.color }} />
               <div className="cat-icon-wrap">
                 <span className="cat-icon">{cat.icon}</span>
               </div>
@@ -34,7 +71,7 @@ const CategoryGrid = () => {
               <p className="cat-desc">{cat.description}</p>
               <div className="cat-footer">
                 <span className="cat-count">
-                  {getClientCount(cat.slug)} supplier{getClientCount(cat.slug) !== 1 ? 's' : ''}
+                  {getClientCount(cat)} supplier{getClientCount(cat) !== 1 ? 's' : ''}
                 </span>
                 <span className="cat-arrow">→</span>
               </div>

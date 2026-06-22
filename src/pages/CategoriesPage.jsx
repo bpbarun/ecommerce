@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import categories from '../data/categories.json';
-import clients from '../data/clients.json';
+import { api } from '../services/api';
 import './CategoriesPage.css';
 
 const CategoriesPage = () => {
-  const getClientCount = (slug) => clients.filter((c) => c.category === slug).length;
-  const getPremiumCount = (slug) => clients.filter((c) => c.category === slug && c.isPremium).length;
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    api.getCategories().then(setCategories).catch(() => {});
+  }, []);
 
   return (
     <div className="categories-page">
@@ -37,12 +39,8 @@ const CategoriesPage = () => {
               </div>
               <div className="cat-full-bottom">
                 <div className="cat-stat">
-                  <span className="cat-stat-num">{getClientCount(cat.slug)}</span>
+                  <span className="cat-stat-num">{cat.supplier_count ?? 0}</span>
                   <span className="cat-stat-label">Suppliers</span>
-                </div>
-                <div className="cat-stat">
-                  <span className="cat-stat-num">{getPremiumCount(cat.slug)}</span>
-                  <span className="cat-stat-label">Premium</span>
                 </div>
                 <div className="cat-view-btn">Browse →</div>
               </div>

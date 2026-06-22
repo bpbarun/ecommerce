@@ -274,14 +274,27 @@
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 15px rgba(243,156,18,0.3);
+  position: relative;
+  overflow: hidden;
 }
+
+.submit-quote-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.submit-quote-btn:hover::after { opacity: 1; }
 
 .submit-quote-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(243,156,18,0.4);
+  box-shadow: 0 8px 24px rgba(243,156,18,0.5);
 }
+.submit-quote-btn:active { transform: scale(0.98); }
 
 /* Success Page */
 .success-page {

@@ -1,0 +1,243 @@
+.qv-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,30,0.6);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.qv-modal {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  animation: modalIn 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  scrollbar-width: thin;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.88) translateY(30px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+
+.qv-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0,0,0,0.07);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qv-close:hover { background: #e74c3c; color: #fff; transform: rotate(90deg); }
+
+.qv-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 24px 20px 18px;
+  padding-right: 50px;
+}
+
+.qv-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.qv-name-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.qv-name-row h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.qv-premium {
+  background: linear-gradient(135deg, #f39c12, #e17055);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.qv-tagline {
+  font-size: 13px;
+  color: #636e72;
+  font-style: italic;
+  margin: 0 0 8px;
+}
+
+.qv-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.qv-stars { font-size: 14px; letter-spacing: 1px; }
+
+.qv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: #636e72;
+}
+
+.qv-body {
+  padding: 0 20px 16px;
+}
+
+.qv-desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 16px;
+  padding: 14px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.qv-body h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+}
+
+.qv-products {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qv-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.qv-product:hover { border-color: #dfe6e9; background: #f8f9fa; }
+.qv-product.in-cart { border-color: #27ae60; background: #f0fff4; }
+
+.qvp-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.qvp-emoji { font-size: 28px; flex-shrink: 0; }
+
+.qvp-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.qvp-unit { font-size: 11px; color: #999; }
+
+.qvp-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.qvp-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a2e;
+  white-space: nowrap;
+}
+
+.qvp-add {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.qvp-add:hover:not(:disabled) { background: linear-gradient(135deg,#533483,#0f3460); transform: scale(1.04); }
+.qvp-add.added { background: #27ae60; cursor: not-allowed; }
+
+.qv-footer {
+  padding: 14px 20px 20px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.qv-view-full {
+  background: linear-gradient(135deg, #f39c12, #e17055);
+  color: #fff;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(243,156,18,0.35);
+}
+.qv-view-full:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(243,156,18,0.5); }
+
+@media (max-width: 480px) {
+  .qv-modal { border-radius: 16px 16px 0 0; max-height: 95vh; }
+  .qv-overlay { align-items: flex-end; padding: 0; }
+}

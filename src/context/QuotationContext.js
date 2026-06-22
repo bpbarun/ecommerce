@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import { api } from '../services/api';
 
 const QuotationContext = createContext();
 
@@ -47,17 +48,32 @@ export const QuotationProvider = ({ children }) => {
 
   const clearCart = () => setCartItems([]);
 
-  const submitQuotation = (formData) => {
-    const quotation = {
-      id: Date.now(),
-      ...formData,
-      items: cartItems,
-      submittedAt: new Date().toLocaleString(),
-      status: 'Pending',
+  const submitQuotation = async (formData) => {
+    const payload = {
+      name:    formData.name,
+      email:   formData.email,
+      phone:   formData.phone,
+      company: formData.company,
+      notes:   formData.notes,
+      items: cartItems.map((item) => ({
+        product_id: item.productId,
+        client_id:  item.clientId,
+        quantity:   item.quantity,
+      })),
     };
-    setSubmittedQuotations((prev) => [quotation, ...prev]);
-    clearCart();
-    return quotation;
+
+    try {
+      const quotation = await api.createQuotation(payload);
+      setSubmittedQuotations((prev) => [quotation, ...prev]);
+      clearCart();
+      return quotation;
+    } catch {
+      // fallback: store locally if API unavailable
+      const quotation = { id: Date.now(), ...formData, items: cartItems, status: 'pending' };
+      setSubmittedQuotations((prev) => [quotation, ...prev]);
+      clearCart();
+      return quotation;
+    }
   };
 
   const isInQuotation = (clientId, productId) =>

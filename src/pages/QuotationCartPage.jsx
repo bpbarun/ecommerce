@@ -34,15 +34,22 @@ const QuotationCartPage = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
       return;
     }
-    const quotation = submitQuotation(form);
-    setSubmitted(quotation);
+    setSubmitting(true);
+    try {
+      const quotation = await submitQuotation(form);
+      setSubmitted(quotation);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const groupedByClient = cartItems.reduce((acc, item) => {
@@ -227,8 +234,8 @@ const QuotationCartPage = () => {
                 <div className="submit-summary">
                   Submitting to <strong>{Object.keys(groupedByClient).length} supplier(s)</strong> for <strong>{cartItems.length} product(s)</strong>
                 </div>
-                <button type="submit" className="submit-quote-btn">
-                  Submit Quotation Request →
+                <button type="submit" className="submit-quote-btn" disabled={submitting}>
+                  {submitting ? 'Submitting...' : 'Submit Quotation Request →'}
                 </button>
               </div>
             </form>
